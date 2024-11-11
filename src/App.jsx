@@ -18,6 +18,7 @@
 
 // import ErrorExample from "./assets/basics/01_basics"
 import USeArry from "./assets/basics/array_ex";
+import ObjectSeteup from "./assets/basics/object_setup";
 
 
 
@@ -25,7 +26,7 @@ function App() {
   return (
     <div className=''>
       {/* <ErrorExample/> */}
-      <USeArry/>
+      <ObjectSeteup/>
     </div>
   );
 }
