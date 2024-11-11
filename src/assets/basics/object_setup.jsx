@@ -3,22 +3,25 @@ import './01_basics.css';
 
 
 const ObjectSeteup=()=>{
+    const [person,setStatus] = useState({
+        name:'abin',age:24,hobby:'playing guitar'
+    });
 
-    const [name,nameSetup] = useState('Abin');
-    const [age,AgeSetup] = useState(24);
-    const [hobby,HobbySetup] = useState('pyaying gitar');
 
 
     const Clickeven=()=>{
-        nameSetup('Sabin');
-        AgeSetup(20)
-        HobbySetup('video editing !')
+        setStatus({
+            name:'sabin',
+            age:20,
+            hobby:'video editing'
+        })
     }
 
     return(
         <div className="c">
-            <h1>{name}</h1>
-            <h2>{age}</h2>
+            <h1>{person.name}</h1>
+            <h2>{person.age}</h2>
+            <h2>{person.hobby}</h2>
             <button onClick={Clickeven}>Change It</button>
         </div>
     )
