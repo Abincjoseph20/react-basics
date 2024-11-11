@@ -16,14 +16,16 @@
 // export default App
 
 
-import ErrorExample from "./assets/basics/01_basics"
+// import ErrorExample from "./assets/basics/01_basics"
+import USeArry from "./assets/basics/array_ex";
 
 
 
 function App() {
   return (
     <div className=''>
-      <ErrorExample/>
+      {/* <ErrorExample/> */}
+      <USeArry/>
     </div>
   );
 }
